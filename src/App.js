@@ -63,6 +63,12 @@ const App = () =>  {
         && itemArray[6] != "empty"){
           setWinMessage(`${itemArray[6]} wins`)
       }
+      else if(itemArray[0] != "empty" && itemArray[1] != "empty" && 
+      itemArray[2] != "empty" && itemArray[3] != "empty" && itemArray[4] != "empty" && 
+       itemArray[5] != "empty" && itemArray[6] != "empty" 
+       && itemArray[7] != "empty" && itemArray[8] != "empty"  ) {
+        setWinMessage("match draw")
+      }
   } 
 
   const changeItem = itemNumber => {
